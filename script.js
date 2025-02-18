@@ -15,7 +15,7 @@ const morseCodeChart = {
 function convertTextToMorse(text){
     let convertedText = text.toUpperCase().split("").map(char => {
             return morseCodeChart[char]|| " ";
-    }).join("");
+    }).join(" ");
     
     return convertedText;
 }
