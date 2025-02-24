@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Russo+One&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Play:wght@400;700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 body, html{
     margin: 0;
     padding: 0;
@@ -5,15 +8,32 @@ body, html{
 
 body{
     height: 100vh;
-    background-color: rgb(151, 151, 151);
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+
+.title{
+    font-family: "Silkscreen", serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    text-shadow: rgb(133, 133, 133) 2px 5px;
+}
+
+.credit{
+    font-family: "Inter", serif;
+    color: rgba(255, 255, 255, 0.803);
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 300px;
+    padding-top: 200px;
     gap: 30px;
+    justify-content: center;
+
 }
 
 .input-output{
@@ -22,6 +42,10 @@ body{
     gap: 10px;
 }
 textarea{
-    height: 100px;
-    width: 300px;
+    height: 200px;
+    width: 500px;
+    padding: 20px;
+    border: 5px rgb(0, 66, 107) solid;
+    border-radius: 10px;
+    overflow: scroll;
 }

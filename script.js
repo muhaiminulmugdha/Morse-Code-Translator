@@ -1,6 +1,8 @@
 let inputText = document.getElementById("input-here");
 let outputCode = document.getElementById("output-here");
 
+let clearAll = document.getElementById("clearAllBtn");
+
 const morseCodeChart = {
     "A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".",
     "F": "..-.", "G": "--.", "H": "....", "I": "..", "J": ".---",
@@ -19,6 +21,13 @@ function convertTextToMorse(text){
     
     return convertedText;
 }
+
+function deleteAll(){
+    outputCode.innerHTML = "";
+    inputText.value = "";
+}
+
+clearAll.addEventListener("click", deleteAll)
 
 inputText.addEventListener("input", textToMorse);
 
