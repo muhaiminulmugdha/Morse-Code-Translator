@@ -41,6 +41,7 @@ body{
     flex-direction: row;
     gap: 10px;
 }
+
 textarea{
     height: 200px;
     width: 500px;
@@ -49,3 +50,19 @@ textarea{
     border-radius: 10px;
     overflow: scroll;
 }
+
+@media (max-width: 600px) {
+    .input-output{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    textarea{
+        height: 100px;
+        width: 250px;
+    }
+
+    .title .title-text{
+        text-align: center;
+    }
+  }
